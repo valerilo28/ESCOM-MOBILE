@@ -5,3 +5,4 @@ torch
 pydantic
 scikit-learn
 python-multipart
+pandas
