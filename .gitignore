@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+*.log
+
+# Node / Next.js
+ai-chatbot/node_modules/
+ai-chatbot/.next/
+ai-chatbot/out/
+ai-chatbot/.turbo/
+ai-chatbot/dist/
+ai-chatbot/build/
+
+# General
+*.DS_Store
+.vscode/
+.idea/
+.env

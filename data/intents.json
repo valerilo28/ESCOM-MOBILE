@@ -1,0 +1,58 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": ["hola", "buenos días", "buenas tardes", "qué tal"],
+      "responses": ["¡Hola! Soy ESCOM-BOT. ¿En qué puedo ayudarte hoy?"]
+    },
+    {
+      "tag": "becas",
+      "patterns": ["becas", "información sobre becas", "quiero una beca", "dame información de becas"],
+      "responses": ["¿Sobre qué beca te gustaría saber? (institucional, SEP, movilidad)"],
+      "next_state": "tipo_beca"
+    },
+    {
+      "tag": "tipo_beca",
+      "patterns": ["beca institucional", "institucional", "beca SEP", "beca de movilidad"],
+      "responses": [
+        "📘 *Beca Institucional:* Se solicita desde el portal del IPN y depende del promedio.",
+        "📗 *Beca SEP:* Es gestionada por el programa Benito Juárez, se publica en SAES y en avisos.",
+        "📙 *Beca de Movilidad:* Dirigida a alumnos interesados en intercambio académico, revisa la convocatoria en la web de ESCOM."
+      ]
+    },
+    {
+      "tag": "inscripciones",
+      "patterns": ["inscripción", "inscribirme", "cuándo me inscribo", "proceso de inscripción"],
+      "responses": ["Las inscripciones se realizan desde el portal del SAES. ¿Deseas saber los pasos o los requisitos?"],
+      "next_state": "detalle_inscripcion"
+    },
+    {
+      "tag": "detalle_inscripcion",
+      "patterns": ["requisitos", "qué necesito", "qué documentos", "pasos", "cómo hacerlo"],
+      "responses": [
+        "🔹 *Requisitos:* Tener boleta liberada y sin adeudos.",
+        "🔹 *Pasos:* Ingresa a SAES > Alumno > Inscripción, selecciona tus materias y confirma el horario."
+      ]
+    },
+    {
+      "tag": "horarios",
+      "patterns": ["horario", "mi horario", "consultar horario", "ver materias"],
+      "responses": ["Puedes consultar tu horario en SAES, en la sección *Alumno → Horarios*."]
+    },
+    {
+      "tag": "servicios_escolares",
+      "patterns": ["servicios escolares", "dónde están servicios escolares", "oficinas de servicios escolares"],
+      "responses": ["Se encuentran en la planta baja del edificio principal, junto a la dirección."]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["gracias", "adiós", "hasta luego", "nos vemos"],
+      "responses": ["¡Hasta pronto! Espero haberte ayudado."]
+    },
+    {
+      "tag": "desconocido",
+      "patterns": [],
+      "responses": ["Lo siento, solo puedo responder preguntas relacionadas con la ESCOM."]
+    }
+  ]
+}
