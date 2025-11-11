@@ -6,3 +6,4 @@ pydantic
 scikit-learn
 python-multipart
 pandas
+sentence_transformers
