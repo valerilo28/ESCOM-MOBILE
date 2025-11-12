@@ -9,8 +9,8 @@ from chatbot.chatbot_core import ChatbotESCOM
 DATA_FILES = {
 "becas": "data/becas.csv",
 "tramites": "data/tramites.csv",
-"horarios": "data/horarios.csv",
-"servicios": "data/servicios.csv",
+"profesores": "data/profesores.csv",
+"tramites": "data/tramites.csv",
 "general": "data/general.csv"
 }
 
