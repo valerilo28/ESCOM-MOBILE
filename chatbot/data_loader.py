@@ -2,7 +2,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 
 class DataLoader:
-    def __init__(self, model_name="all-MiniLM-L6-v2"):
+    def __init__(self, model_name="mrm8488/t5-base-finetuned-spanish-summarization"):
         self.model = SentenceTransformer(model_name)
         self.datasets = {}
 
